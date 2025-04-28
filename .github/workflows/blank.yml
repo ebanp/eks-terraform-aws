@@ -17,12 +17,17 @@ jobs:
   terraform:
     name: 'Terraform Plan and Apply'
     runs-on: ubuntu-latest
+ 
 
     permissions:
       id-token: write   # Para autenticarse con AWS vía OIDC (sin claves)
       contents: read
 
     steps:
+    - name: "Check current path"
+      run: |
+          pwd
+          ls -l       
     - name: 'Checkout'
       uses: actions/checkout@v4
 
