@@ -1,9 +1,11 @@
 variable "namespace" {
-  type = string
+  type    = string
+  default = "hola-mundo"
 }
 
 variable "app_name" {
   type = string
+  default = "hola-mundo-app" 
 }
 
 variable "replicas" {
@@ -28,9 +30,10 @@ variable "service_type" {
 
 variable "app_image" {
   type    = string
+  default = "hashicorp/http-echo:0.2.3"
 }
 
 variable "app_args" {
   type    = list(string)
-  default = []
+  default = ["-text=Hola Mundo"]
 }
