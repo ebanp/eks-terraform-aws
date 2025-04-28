@@ -44,15 +44,3 @@ module "eks" {
     }
   }
 }
-
-module "hola_mundo" {
-  source           = "./HelloWorld"
-  namespace        = var.namespace
-  app_name         = var.app_name
-  replicas         = 2
-  container_port   = 8080
-  service_port     = 80
-  service_type     = var.service_type
-  app_image        = var.app_image
-  app_args         = var.app_args
-}
