@@ -11,7 +11,7 @@ on:
 env:
   AWS_REGION: us-east-2   # <-- Cambia a tu región AWS
   TF_VERSION: 1.4.0      # <-- Versión de Terraform que quieres usar
-  TERRAFORM_DIR: eks-terraform-aws/.terraform
+  TERRAFORM_DIR: eks-terraform-aws/
 
 jobs:
   terraform:
