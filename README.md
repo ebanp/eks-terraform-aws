@@ -1,4 +1,4 @@
- Terraform EKS - Hola Mundo
+#Terraform EKS - Hola Mundo
 Este proyecto despliega una aplicación de Hola Mundo en un EKS de AWS usando Terraform.
 
 📦 ¿Qué crea este proyecto?
