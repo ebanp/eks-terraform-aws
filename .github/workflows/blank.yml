@@ -30,6 +30,8 @@ jobs:
           ls -l       
     - name: 'Checkout'
       uses: actions/checkout@v4
+    - name: Mostrar estructura del repositorio
+      run: ls -R
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v3
