@@ -1,5 +1,5 @@
 variable "region" {
-  type        = string
+  type = string
 }
 
 variable "vpc_name" {
@@ -9,11 +9,11 @@ variable "vpc_name" {
 }
 
 variable "AWS_ACCESS_KEY_ID" {
-  type        = string
+  type = string
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
-  type        = string
+  type = string
 }
 
 variable "namespace" {
@@ -22,8 +22,8 @@ variable "namespace" {
 }
 
 variable "app_name" {
-  type = string
-  default = "hola-mundo-app" 
+  type    = string
+  default = "hola-mundo-app"
 }
 
 variable "replicas" {
@@ -55,3 +55,4 @@ variable "app_args" {
   type    = list(string)
   default = ["-text=Hola Mundo"]
 }
+
