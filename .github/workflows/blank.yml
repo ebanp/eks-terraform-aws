@@ -52,7 +52,7 @@ jobs:
 
     - name: 'Terraform Plan'
       working-directory: ${{ env.TERRAFORM_DIR }}
-      run: terraform plan -out=tfplan
+      run: terraform plan
 
     - name: 'Terraform Apply'
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
