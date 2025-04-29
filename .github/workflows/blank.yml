@@ -9,8 +9,7 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-2   # <-- Cambia a tu región AWS
-  TF_VERSION: 1.4.0      # <-- Versión de Terraform que quieres usar
+  TF_VERSION: 1.4.0   
   TERRAFORM_DIR: ./
 
 jobs:
@@ -20,7 +19,7 @@ jobs:
  
 
     permissions:
-      id-token: write   # Para autenticarse con AWS vía OIDC (sin claves)
+      id-token: write 
       contents: read
 
     steps:
