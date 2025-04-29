@@ -70,4 +70,4 @@ Además, puedes configurar como variable de entorno la región:
 
 ```yaml
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
