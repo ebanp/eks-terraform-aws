@@ -15,4 +15,12 @@ terraform {
   required_version = ">= 1.4.0"
 }
 
-
+terraform {
+  backend "s3" {
+    bucket         = "mybucketawsterraform3"
+    key            = "infra/terraform.tfstate"
+    region         = "us-east-2"
+    dynamodb_table = "state-lock-table"
+    encrypt        = true
+  }
+}
